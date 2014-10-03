@@ -46,12 +46,9 @@ while(1) {
             }
             if ($command == ":!slave") {
                 
-                $parts = explode("!",$ex[0]); 
-                //break the string up around the "/" character in $mystring 
-
+                $parts = explode("!",$ex[0]);
                 $user = substr($parts['0'], 1);
-                //grab the first part 
-                
+            
                 if($user == "Hammster")
                     fputs($socket, "PRIVMSG ".$channel." :Yes MASTER! \n");
                 else
