@@ -9,7 +9,7 @@ $channel = '#openra';
 $socket = fsockopen("irc.freenode.net", 6667);
  
 // Send auth info
-fputs($socket,"USER HammsterBot hammst3r.de HammsterBot :Hammster bot\n");
+fputs($socket,"USER HammsterBot hammst3r.de HammsterBot :HammsterBot\n");
 fputs($socket,"NICK HammsterBot\n");
  
 // Join channel
