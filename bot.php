@@ -14,8 +14,8 @@ $socket = fsockopen("irc.freenode.net", 6667);
 
 // Send auth info
 // fputs($socket, "PASS " . $password . "\n");
-fputs($socket, "USER " . $nickname . " 0 * :" . $master . "'s Bot\n");
 fputs($socket, "NICK " . $nickname . "\n");
+fputs($socket, "USER " . $nickname . " 0 * :" . $master . "'s Bot\n");
 
 // Join channel
 fputs($socket, "JOIN " . $channel . "\n");
