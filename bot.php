@@ -3,15 +3,17 @@
 // Prevent PHP from stopping the script after 30 sec
 set_time_limit(0);
 
+// Change these values!
 $channel  = '#openra';
 $nickname = 'HammsterBot';
+// $password = 'secret';
 $master   = 'Hammster';
 
 // Opening the socket to the Rizon network
 $socket = fsockopen("irc.freenode.net", 6667);
 
 // Send auth info
-//fputs($socket,"USER HammsterBot hammst3r.de HammsterBot :HammsterBot\n");
+// fputs($socket, "PASS " . $password . "\n");
 fputs($socket, "USER " . $nickname . " 0 * :" . $master . "'s Bot\n");
 fputs($socket, "NICK " . $nickname . "\n");
 
