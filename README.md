@@ -5,4 +5,4 @@ A minimal IRC Bot written in PHP following [RFC1459](https://tools.ietf.org/html
 
 ## Usage:
 - configure values in bot.php
-- run php bot.php
+- run `php bot.php` in you command line
