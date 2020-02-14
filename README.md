@@ -1,8 +1,8 @@
-php-irc-bot
+PHP IRC bot
 ===========
 
-A bot written in php for use in CLI
+A minimal IRC Bot written in PHP following [RFC1459](https://tools.ietf.org/html/rfc1459)
 
-usage:
+## Usage:
 - configure values in bot.php
 - run php bot.php
