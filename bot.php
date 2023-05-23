@@ -63,7 +63,7 @@ while (1) {
                     fputs($socket, "PRIVMSG " . $ex[2] . " :get lost " . $user . " you filthy infidel! \n");
             }
             if ($command == ":!test") {
-                fputs($socket, "PRIVMSG " . $ex[2] . " :value0 " . $ex[0] . ", value1 " . $ex[1] . ",value2 " . $ex[2] . ",value3 " . $ex[3] . "\n");
+                fputs($socket, "PRIVMSG " . $ex[2] . " :value0 " . $ex[0] . ", value1 " . $ex[1] . ",value2 " . $ex[2] . ",value3 " . $command . "\n");
             }
             if ($command == ":!chucknorris") {
                 $joke = json_decode(file_get_contents('http://api.icndb.com/jokes/random', true));
